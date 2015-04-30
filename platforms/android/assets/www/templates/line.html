@@ -1,0 +1,202 @@
+<section class="LinePage">
+         <div class="Header">
+                    <table class="HeadTable">
+                          <tr>
+                               <td class="HeadTdLeft" style="cursor:pointer" onclick="navigate('#List/')">
+                             		<img src="img/main/back.png"  style="width:100%;">
+                               </td>
+                               <td class="HeadTdCenter">
+		                            <img src="img/main/ylogo.png"  style="width:100%;">
+                               </td>
+                               <td class="HeadTdRight" onClick="AddContentToPopup(2)">
+                           			<img src="img/main/menuicon.png"  style="width:100%;">
+                               </td>
+                           </tr>
+                     </table>
+       	</div>
+        
+        <div class="Content1" id="LineDiv" style="position:relative; z-index:1">   
+            <div> 
+               
+                   		  <!-- Day Status -->
+                          <div id="dayStatus" align="center">
+      					  		<p>יום א &nbsp; 24.1.14</p>
+                          </div>
+                          <!-- Details -->
+                          <div style="width:100%; overflow:hidden">
+                                <div id="Line_Logo">
+                                    <img id="lthumbLogo" src="img/pubs/info/{{infoArray[whichItem].id}}.png" class="IMG">
+                                </div>
+                                <div id="InfDv">
+                                    <p class="lpubTitle">{{infoArray[whichItem].name}}</p>
+                                    <p class="lpubAdress">{{infoArray[whichItem].address}}</p>
+                                    <div id="LineTitle">
+                                        <div id="LineTitleDv1">
+                                            <p class="lpubPhone" onClick="DialPhone()">טלפון : {{infoArray[whichItem].phone}}</p>
+                                        </div>
+                                        <div id="LineTitleDv2" ng-click="openImport()">
+                                            <img src="img/pubs/import.png" />
+                                        </div>
+                                    </div>
+                                    <p class="lpubType">שעות פעילות : 21:00 - 5:00</p>
+                                </div>
+						</div>
+                        
+                        <!-- Bussiness Page Btn -->
+                        <div style="width:100%; z-index:20; cursor:pointer" align="center" onClick="OpenPubPage()">
+                     		<div style="width:95%; position:relative;">
+                     			<img id="" src="img/pubs/page.png" style="width:100%;">
+                            </div>
+                        </div>
+                        
+                        <!-- Line Icons Table -->
+                        <table style="width:90%; position:relative;  margin-top:3%" align="center">
+                            <tr style="width:100%; margin-left:25%;">
+                                <td ng-click="openRate()" style="cursor:pointer; top:1px; position:relative">
+                                    <img src="img/pubs/rate.png" style="width:100%;"  />
+                                </td>
+                                <td style="width:33%; position:relative;" onClick="navigate(http://waze.to/hsvc1gpr17)" >
+                                    <img src="img/pubs/navigate.png"  style="width:100%;"  />
+                                    <div style="position:relative">
+                                        <p id="Navigate" style="position:absolute; font-size:12px; color:white; top:-75%; left:14%; ">5 ק"מ ליעד</p>
+                                        <img src="img/pubs/navigate1.png"  style="width:100%"  />
+                                    </div>
+                                </td>
+                                <td onClick="Youtube_Iframe()">
+                                    <img src="img/pubs/youtube.png" class="img-responsive" style="width:100%;"  />
+                                </td>
+                                <td onClick="Facebook_Iframe()">
+                                    <img src="img/pubs/facebook.png" class="img-responsive" style="width:100%;"  />
+                                </td>
+                             </tr>
+                         </table>
+                         
+                         <!-- Gallery -->
+                         <div  style="position:relative; width:100%; margin-top:4%; z-index:0;" align="center">
+                       		<div class="content-primary">
+                       			<table>
+                                	<tr>
+                                    	<td ng-click="navigateUrl('#/Gallery/',whichItem)" style="width:30%; cursor:pointer">
+                                        	<img src="img/pubs/{{infoArray[whichItem].folder}}/thumb/1.jpg" style="width:100%" />
+                                        </td>
+                                        <td ng-click="navigateUrl('#/Gallery/',whichItem)" style="width:30%">
+                                        	<img src="img/pubs/{{infoArray[whichItem].folder}}/thumb/2.jpg" style="width:100%" />
+                                        </td>
+                                        <td ng-click="navigateUrl('#/Gallery/',whichItem)" style="width:30%">
+                                        	<img src="img/pubs/{{infoArray[whichItem].folder}}/thumb/3.jpg" style="width:100%" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                    	<td ng-click="navigateUrl('#/Gallery/',whichItem)" style="width:30%">
+                                        	<img src="img/pubs/{{infoArray[whichItem].folder}}/thumb/4.jpg" style="width:100%" />
+                                        </td>
+                                        <td ng-click="navigateUrl('#/Gallery/',whichItem)" style="width:30%">
+                                        	<img src="img/pubs/{{infoArray[whichItem].folder}}/thumb/5.jpg" style="width:100%" />
+                                        </td>
+                                        <td ng-click="navigateUrl('#/Gallery/',whichItem)" style="width:30%">
+                                        	<img src="img/pubs/{{infoArray[whichItem].folder}}/thumb/6.jpg" style="width:100%" />
+                                        </td>
+                                    </tr>
+                                </table>
+                             </div>
+                         </div>
+                         
+                       <!-- Rate -->
+                       <div align="center" style="position:relative; margin-top:'+mt+'">
+	 				 		<p style=" color:white;">דירוג
+                                <span style="position:relative; top:15px;">
+                                    <img id="LineStar1" src="img/pubs/star.png" style="width:10%;">
+                                    <img id="LineStar2" src="img/pubs/star.png" style="width:10%;">
+                                    <img id="LineStar3" src="img/pubs/star.png" style="width:10%;">
+                                    <img id="LineStar4" src="img/pubs/star.png" style="width:10%;">
+                                    <img id="LineStar5" src="img/pubs/star.png" style="width:10%;">
+                                </span>
+                             </p>
+                   	   </div>
+                       
+                       <!-- About -->
+                       <div align="center">
+                   			<p id="LineDiscription" style="color:white; width:95%; direction:rlt;">{{infoArray[whichItem].about}}'</p>
+                   	   </div> 
+                       
+                       <!-- Like Invite Icons -->
+                       <div style="width:100%; overflow:hidden; margin-top:-2%">
+                             <div id="inviteDiv" style="width:50%; float:left;" ng-click="navigateUrl('#/Invite/',whichItem)">
+                                  <div style="width:68%; margin-left:30%" align="right">
+                                    <img src="img/pubs/likeline3.png" style="width:100%"/>
+                                  </div></div>
+                                  <div style="width:50%; float:left;" align="left" onClick="increaseLike();">
+                                    <div style="width:70%; margin-left:5%; margin-top:2%; overflow:hidden" align="left">
+                                        <div style="position:relative; float:left; width:40%">
+                                            <p id="likeId" style="position:absolute; left:29%; font-size:13px; top:-5%; font-weight:bold; color:#00467b">1134</p>
+                                            <img src="img/pubs/like02.png" style="width:100%"/>
+                                        </div>
+                                        <div style="position:relative; float:left; width:60%">
+                                            <img src="img/pubs/likeline2.png" style="width:100%"/>
+                                        </div>
+                                    </div>
+                              </div>
+                      </div>
+                      
+                      
+                      <!-- Facebook Friends -->
+                      <div align="center" style=" margin-top:-2%">
+                        	<p style="font-weight:bold; color:#CCC"> 1763 חברים אוהבים את הליין הזה</p>
+                        	<img src="img/pubs/linelove.jpg"  style="width:100%;  margin-top:-3%" />
+                      </div>
+                      
+                      <!-- Coupon_Icons -->
+                      <table style="width:100%; position:relative;  margin-top:3%" align="center">
+                        	<tr style="width:100%; margin-left:25%;">
+                            	<td id="couponBtn" style="cursor:pointer"">
+                                	<img src="img/pubs/coupon.png" style="width:100%" >
+                                </td>
+                                <td id="BirthdayBtn" ng-click="navigateUrl('#/Birthday/',whichItem)">
+                                	<img src="img/pubs/birthdays.png" style="width:100%">
+                                </td>
+								
+								<td onClick="AddContentToPopup(5)">
+                                	<img src="img/pubs/old_images.png" style="width:100%">
+                                </td>
+							</tr>
+                      </table>
+                      
+                      <!-- Share Icons -->
+                      <div id="">
+                        <img src="img/menu/line.png" style="width:100%; position:relative; ">
+                      </div>
+                      <div id="" style="margin-top:10px;  position:relative" align="center">
+                         <img src="img/pubs/share.png" style="width:30%" onClick="sharePub()">
+                         <img id="reviewBtn" src="img/pubs/opinion.png" style="width:30%"></a>
+                         <img id="teamBtn" src="img/pubs/team.png" style="width:30%">
+                      </div>
+                      
+                      <!-- Week Icons -->
+                      <div id="" style="margin:3% 0 3% 0; width:100%;" align="center">
+                        <img id="Week" src="img/pubs/week.jpg" style="width:96%; position:relative;" onClick="AddContentToPopup(5)">
+                        <table id="DetailsTable" style="width:100%; overflow:hidden" align="center">
+                        </table>
+                      </div>
+                      
+                      <!-- Week Icons -->
+                      <div  id="revDv" align="center" style="margin-top:10px; right:0%; position:relative">
+							   <img src="img/pubs/reply.png" style="width:30%" onClick="AddContentToPopup(1)">'				   
+					  </div>
+                      
+                      <!-- Footer Icons -->
+                      <table style="width:100%; position:relative; background-image:url(img/pubs/bck.jpg); background-size:100%; background-repeat:repeat;width:100%; ">
+                        	<tr style="width:100%;">
+                            	<td onClick="sendToMail()">
+                                	<img src="img/pubs/bot1.png" style="width:100%" >
+                                </td>
+                                <td onClick="sendToMail()">
+                                	<img src="img/pubs/bot2.png" style="width:100%">
+                                </td>
+                                <td onClick="AddContentToPopup(6)">
+                                	<img src="img/pubs/bot3.png" style="width:100%">
+                                </td>
+                            </tr>
+                    </table>
+            </div>
+   		</div>
+</section>

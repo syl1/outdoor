@@ -1,0 +1,433 @@
+
+body
+{
+	padding:0px;
+	margin:0px;
+	width:100%;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+}
+
+
+
+
+/*  ////////////////////   Header  ///////////////////////////////////*/
+
+.Header
+{
+	background-color:#333;
+	position:fixed;
+	top:0px;
+	z-index:10000;
+}
+
+.HeadTable
+{
+	position:relative;
+	width:95%;
+	overflow:hidden;
+}
+
+.HeadTdLeft
+{
+	width:15%;
+	left:-5%;
+	position:relative;
+}
+
+.HeadTdCenter
+{
+	width:40%;
+	left:3%;
+	position:relative;
+}
+
+.HeadTdRight
+{
+	width:15%;
+	left:5%;
+	position:relative;
+}
+
+
+/* //////////////////////////////////////////////////////////////////////*/
+/* //////////////////////////////////////////////////////////////////////*/ 
+/*  ////////////////////   Main Page  ///////////////////////////////////*/
+/* //////////////////////////////////////////////////////////////////////*/
+/* //////////////////////////////////////////////////////////////////////*/
+
+.MainPage
+{
+	width:100%;
+	overflow:hidden;	
+}
+
+.MainPage .Content
+{
+	margin-top:20%;
+	background-image:url('../img/main/back.jpg');
+	background-size:100% 100%;
+	width:100%;
+	position:relative;
+}
+
+#MainPageContent
+{
+	padding-top:10%;
+}
+
+#MainButtons
+{
+	position:relative;
+	margin-bottom:5%;
+}
+
+#MainButtonsDiv
+{
+	padding-top:10%;
+	width:90%;
+}
+
+.MainButtonsClass
+{
+	width:32%;
+}
+
+
+#mainPageLogo
+{
+	margin-top:0px; 
+	position:relative;
+}
+
+#mainPageLogo img
+{
+	width:40%;
+}
+
+
+#mainPageWhere
+{
+	margin-top:0px; 
+	position:relative
+}
+
+#mainPageWhere img
+{
+	width:55%;
+}
+
+
+#mainPageNext
+{
+	margin-top:0px; 
+	position:relative
+}
+
+#mainPageNext img
+{
+	width:20%;
+}
+
+/* //////////////////////////////////////////////////////////////////////*/
+/* //////////////////////////////////////////////////////////////////////*/ 
+/*  ////////////////////   Menu Page  ///////////////////////////////////*/
+/* //////////////////////////////////////////////////////////////////////*/
+/* //////////////////////////////////////////////////////////////////////*/
+
+.MenuPage
+{
+	width:100%;
+	overflow:hidden;
+}
+
+.MenuPage .Content
+{
+	margin-top:20%;
+	background-image:url('../img/menu/back.jpg');
+	background-size:100% 100%;
+	width:100%;
+	position:relative;
+}
+
+
+
+#menuTable
+{
+	width:100%;
+}
+
+/* //////////////////////////////////////////////////////////////////////*/
+/* //////////////////////////////////////////////////////////////////////*/ 
+/*  ////////////////////   ListPage Page  ///////////////////////////////////*/
+/* //////////////////////////////////////////////////////////////////////*/
+/* //////////////////////////////////////////////////////////////////////*/
+
+.ListPage
+{
+
+}
+
+.ListPage .Content1
+{
+	background-image:url('../img/menu/back.jpg');
+	width:100%;
+	position:relative;
+	margin-top:20%;
+}
+
+#DaysTable
+{
+	background-color:#999; 
+	padding:9px 1px 7px 1px;
+	width:100%;
+	margin-top:-1%;
+}
+
+#DaysThead
+{
+	overflow:auto;
+	display:block;
+}
+
+#tBody
+{
+	width:100%;
+	display:block
+}
+
+#DaysRow
+{
+	display:inline;
+}
+
+
+.dayThumb
+{
+	width:40px;
+	border-radius:4px; 
+	padding:6px;
+	background-color:#f9f9f9; 
+	margin:14px;
+	padding-top:1%;
+	padding-bottom:1%;
+}
+
+.dayThumb div
+{
+	
+}
+
+
+.spDays
+{
+	top:17%; 
+	position:relative;
+}
+
+.fixDiv
+{
+	margin:0;
+	padding:0; 
+	border:none;
+}
+
+
+
+/* //////////////////////////////////////////////////////////////////////*/
+/* //////////////////////////////////////////////////////////////////////*/ 
+/*  ////////////////////   Line Page  ///////////////////////////////////*/
+/* //////////////////////////////////////////////////////////////////////*/
+/* //////////////////////////////////////////////////////////////////////*/
+
+.LinePage
+{
+	width:100%;
+	overflow:hidden;
+}
+
+.LinePage #LineDiv
+{
+	margin-top:20%;
+	background-image:url('../img/menu/back.jpg');
+	background-size:100% 100%;
+	width:100%;
+	position:relative;
+	overflow:hidden;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////// 
+/* ////////////////////////////////////////////////////////////////////// 
+/* ////////////////////////////////////////////////////////////////////// 
+/* ////////////////////////////////////////////////////////////////////// 
+/* ////////////////////////////////////////////////////////////////////// 
+/* //////////////////////////////////////////////////////////////////////*/
+
+
+
+/* about ------------------------ 
+.animClass1.ng-leave        {
+     -webkit-animation:slideInRight 0.5s both ease-in;
+	-moz-animation:slideInRight 0.5s both ease-in;
+	animation:slideInRight 0.5s both ease-in;    
+}
+.animClass1.ng-enter 		{  
+    -webkit-animation:slideInRight 0.5s both ease-in;
+	-moz-animation:slideInRight 0.5s both ease-in;
+	animation:slideInRight 0.5s both ease-in;    
+}
+
+ 
+.animClass1.ng-leave        {
+    -webkit-animation:slideOutLeft 0.5s both ease-in;
+	-moz-animation:slideOutLeft 0.5s both ease-in;
+	animation:slideOutLeft 0.5s both ease-in;   
+}
+
+
+/* slide in from the right 
+@keyframes slideInRight {
+	from 	{ transform:translateX(100%); translateY(0%);}
+	to 		{ transform: translateX(0); translateY(0%);}
+}
+@-moz-keyframes slideInRight {
+	from 	{ -moz-transform:translateX(100%); translateY(0%);}
+	to 		{ -moz-transform: translateX(0); translateY(0%);}
+}
+@-webkit-keyframes slideInRight {
+	from 	{ -webkit-transform:translateX(100%); translateY(0%);}
+	to 		{ -webkit-transform: translateX(0); translateY(0%);}
+}
+
+
+
+/* slide in from the bottom 
+@keyframes slideOutLeft {
+	to 		{ transform: translateX(-100%); translateY(0%);}
+}
+@-moz-keyframes slideOutLeft {	
+	to 		{ -moz-transform: translateX(-100%); translateY(0%);}
+}
+@-webkit-keyframes slideOutLeft {
+	to 		{ -webkit-transform: translateX(-100%); translateY(0%);}
+}
+
+
+
+
+
+
+.animClass1.ng-enter,  
+.animClass1.ng-leave,  
+.animClass1.ng-enter,  
+.animClass1.ng-leave 
+{
+    top: 0; right: 0; bottom: 0; left: 0;  
+    background: inherit;  
+    -ms-transition: 0.50s ease-in-out;  
+    -webkit-transition: 0.50s ease-in-out;  
+    transition:  0.50s ease-in-out;  
+}  
+
+.animClass1.ng-enter {  
+    z-index: 101;  
+    -webkit-transform: translateX(100%);  
+    transform: translateX(100%);  
+}  
+.animClass1.ng-enter.ng-enter-active {  
+    -webkit-transform: translateX(0);  
+    transform: translateX(0);  
+}  
+.animClass1.ng-leave {  
+    z-index: 100;  
+    -webkit-transform: translateX(0);  
+    transform: translateX(0);  
+}  
+.animClass1.ng-leave.ng-leave-active {  
+    -webkit-transform: translateX(-100%);  
+    transform: translateX(-100%);  
+} 
+
+
+.animClass1.ng-enter {  
+    z-index: 100;  
+    -webkit-transform: translateX(-100%);  
+    transform: translateX(-100%);  
+}  
+.animClass1.ng-enter.ng-enter-active {  
+    -webkit-transform: translateX(0);  
+    transform: translateX(0);  
+}  
+.animClass1.ng-leave {  
+    z-index: 101;  
+    -webkit-transform: translateX(0);  
+    transform: translateX(0);  
+}  
+.animClass1.ng-leave.ng-leave-active {  
+    -webkit-transform: translateX(100%);  
+    transform: translateX(100%);  
+}   */
+
+
+
+.animClass1.ng-enter 		{  
+    -webkit-animation:slideInRight 0.5s both ease-in;
+	-moz-animation:slideInRight 0.5s both ease-in;
+	animation:slideInRight 0.5s both ease-in;    
+}
+
+.animClass1.ng-leave 		{  
+    -webkit-animation:slideOutLeft 0.5s both ease-in;
+	-moz-animation:slideOutLeft 0.5s both ease-in;
+	animation:slideOutLeft 0.5s both ease-in;    
+}
+
+
+
+/* slide in from the right */
+@keyframes slideInRight {
+	from 	{ transform:translateX(100%); }
+	to 		{ transform: translateX(0); }
+}
+@-moz-keyframes slideInRight {
+	from 	{ -moz-transform:translateX(100%); }
+	to 		{ -moz-transform: translateX(0); }
+}
+@-webkit-keyframes slideInRight {
+	from 	{ -webkit-transform:translateX(100%); }
+	to 		{ -webkit-transform: translateX(0); }
+}
+
+
+/* slide in from the bottom */
+@keyframes slideOutLeft {
+	to 		{ transform: translateX(-100%); }
+}
+@-moz-keyframes slideOutLeft {	
+	to 		{ -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes slideOutLeft {
+	to 		{ -webkit-transform: translateX(-100%); }
+}
